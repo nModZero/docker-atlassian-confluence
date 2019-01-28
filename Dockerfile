@@ -56,7 +56,7 @@ VOLUME ["/var/atlassian/confluence", "/opt/atlassian/confluence/logs"]
 # Set the default working directory as the Confluence home directory.
 WORKDIR /var/atlassian/confluence
 
-COPY docker-entrypoint.sh /
+COPY "docker-entrypoint.sh" "/"
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 # Run Atlassian Confluence as a foreground process by default.
