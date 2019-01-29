@@ -46,7 +46,7 @@ RUN set -x \
 USER daemon:daemon
 
 # Expose default HTTP connector port.
-EXPOSE 8080
+EXPOSE 8090
 
 # Set volume mount points for installation and home directory. Changes to the
 # home directory needs to be persisted as well as parts of the installation
